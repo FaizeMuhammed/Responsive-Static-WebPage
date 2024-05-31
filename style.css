@@ -139,23 +139,14 @@ hr{
 .navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-.navbar ul{
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px;
+    align-items: baseline;
+    padding: 15px 0px 0px 0px;
 }
 li a:hover{
     text-decoration: underline;
     box-shadow: 0px 13px 20px 0px #00000012;
     cursor: pointer;
     color:var(--secondry-color);
-}
-.navbar li{
-    padding: 15px;
 }
 .nav_btn a{
     color: var(--secondry-color);
@@ -165,24 +156,53 @@ li a:hover{
     text-decoration: underline;
     box-shadow: 0px 13px 20px 0px #00000012;
     cursor: pointer;
-    
 }
 .navbar_list{
     display: flex;
-    align-items: center;
-    gap: 250px
-    
+    align-items: baseline;
+    width: 80%;
+    justify-content: space-between;
 }
-li a{
-    font-size: 14px;
-    font-weight: 700;
-    color:var(--primary-color)
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar_list ul li a{
+    display: flex;
+    padding: 2px 15px;
+    text-align: center;
+    align-items: center;
+}
+ul li  .drop_down li{
+    display: block;
+}
+.drop_down{
+    width: 100%;
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0px 13px 19px 0px #00000012;
+    transition: ease-in;
+}
+.drop_down a{
+    display: block;
+    padding: 5px;
+}
+ul li:hover .drop_down{
+    display: block;
 }
 .nav_btn{
     display: flex;
     align-items: center;
     gap: 40px;
-   
 }
 /*hero_bar clases*/
 .hero_textbar{
@@ -304,7 +324,7 @@ li a{
     padding: 80px 0px 80px 0px;
 }
 
-.app_section .pricing_section h2,.app_section .pricing_section p{
+.app_section .title_section h2,.app_section .title_section p{
     color: var(--background-color);
 }
 .section_row{
@@ -470,14 +490,14 @@ li a{
     flex-direction: column;
     gap: 12px;
 }
-.pricing_section{
+.title_section{
     margin: 0px 0px 80px 0px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
 }
-.pricing_section p{
+.title_section p{
     max-width: 400px;
 }
 .circle_new{
@@ -670,24 +690,32 @@ li a{
     align-items: center;
     justify-content: center;
 }
+.mail_bar  .btn{
+    border-radius: 0px 4px 4px 0px;
+}
 .mail_form{
     width: 600px;
     height: 40px;
     display: flex;
     align-items: center;
     border: none;
+    border-radius: 4px 0px 0px 4px;
 }
 .mail_form ::placeholder{
     font-size: 14px;
 }
 /* company_section clases*/
-.company_info{
+.company_details{
     display: flex;
     align-items: flex-start;
     margin: 0px 0px 40px 0px;
     justify-content: space-between;
 }
-
+.company_info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .company_info ul{
     list-style: none;
     display: flex;
@@ -699,6 +727,7 @@ li a{
 .company_info li{
     display: flex;
     align-items: center;
+    gap: 8px;
 }
 .company_info span{
     color: #23A6F0;
@@ -706,10 +735,8 @@ li a{
 .text_align p{
     text-align: center;
 }
-.footer{
-    display: flex;
-    align-items: center;
-    height: 50px;
+.footer_border{
+    
     background: #FAFAFA;
 
 }
@@ -719,18 +746,20 @@ li a{
 }
 .footer h6{
     color: var(--primary-color);
+    width: 60%;
 }
 .socialmedia_icons{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
     gap: 15px;
+    width: 100%;
 }
 .footer_tale{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 598px;
+    width: 100%;
     
 }
 
