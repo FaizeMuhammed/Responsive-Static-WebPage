@@ -1,0 +1,291 @@
+@media only screen and (max-width: 1024px) {
+   
+    .container{
+        padding: 0px 25px;
+    }
+    .hero_imgbar img{
+        width: 350px;
+        padding: 0 0 0 15px;
+
+    }
+    .hero_bar{
+        justify-content: space-between;
+    }
+    .section_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .section_column{
+        width: 341px;
+    }
+    .pricing_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navbar_list{
+        justify-content: space-around;
+    }
+    .btn{
+        padding: 10px;
+    }
+    a{
+        font-size: 12px;
+    }
+    
+    h3{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 37px;
+    }
+    .brands{
+        gap: 20px;
+        padding: 5px;
+        justify-content: center;
+    }
+    .brands img{
+        max-width: 70%;
+    }
+    .brands img:nth-child(1){
+        max-width: 100%;
+    }
+    .pricing_outerline{
+        margin: 10px;
+    }
+    .main_component{
+        gap: 20px;
+    }
+    .component_img img{
+        width: 350px;
+    }
+    .navbar_list ul li a{
+        padding: 3px 8px;
+    }
+    .company_info h5{
+        font-size: 13px;
+    }
+    .footer_tale h6{
+        font-size: 10px;
+    }
+    .appointment_row{
+        gap:10px;
+    }
+
+  }
+@media only screen and (max-width: 768px) {
+    .container{
+        width: 95%;
+        padding: 0px;
+
+    }
+    .navbar_list{
+        width: 70%;
+        display: contents;
+    }
+    .navbar_list label{
+        display: block;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+    .drop_list{
+        position: absolute;
+        left: 0%;
+        top: 40px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        background-color: #89b2c4;
+        box-shadow: 0px 13px 20px 0px #00000012;
+        align-items: center;
+        justify-content: center;
+        transition:all 0.5s ease-in-out;
+        
+    }
+    .brand_name span{
+        display: flex;
+        font-size: 25px;
+    }
+    #checking{
+        display: none;
+    }
+    #checking:checked ~  .drop_list{
+        visibility: hidden;
+        margin-top: -300px;
+    }
+    .in_btns{
+        display: flex;
+    }
+    .nav_btn{
+        display: none;
+    }
+    li ul{
+        visibility: hidden;
+    }
+    .drop_list span{
+        display: none;
+    }
+    .pricing_row{
+        gap: 50px;
+    }
+    .circle_margin{
+        bottom: 695px;
+    }
+    
+    .navbar li{
+        padding: 0px;
+        margin: 0;
+    }
+    .navbar li a{
+        font-size: 10px;
+        color: black;
+        
+    }
+    li .btn{
+        padding: 7px;
+        font-size: 10px;
+    }
+    .hero_bar{
+        justify-content: center;
+    }
+    .hero_imgbar img{
+        display: none;
+    }
+    .hero_btns{
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+    
+    h4{
+        font-size: 14px;
+        text-align: center;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .hero_textbar h5{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 35px;
+    }
+    h1{
+        font-size: 45px;
+        text-align: center;
+        
+    }
+    li a{
+        font-size: 10px;
+    }
+    .footer_tale h6{
+        font-size: 10px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .appointment_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .activity_img img{
+        display: none;
+    }
+    .activity_bar{
+        justify-content: center;
+        margin: 50px 0px 50px 0px;
+    }
+    .brands{
+        display: none;
+    }
+    .brands img{
+        width: 90px;
+        height: 40px;
+    }
+    .pricing_row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mail_form{
+        width: 400px;
+    }
+   
+ 
+    .company_info{
+        justify-content: space-evenly               ;
+    }
+    .filled_button,.transperent_button{
+        min-width: 100px;
+        font-size: 12px;
+        height:     40px;
+    }
+
+
+}
+@media only screen and (max-width: 540px){
+
+
+    .company_details{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: baseline;
+    }
+    .company_info ul{
+        gap: 0px;
+    }
+    .client_row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: baseline;
+    }
+    .component_img img{
+        display: none;
+    }
+    .main_component{
+        margin: 50px 0px;
+    }
+    .mail_form{
+        width: 300px;
+    }
+
+}
+@media only screen and (max-width: 420px){
+    .mail_form{
+        width: 200px;
+    }
+    .like_bar{
+        top: 210px;
+    }
+    .section_column{
+        max-width: 300px;
+    }
+    .section_column img{
+        max-width: 300px;
+    }
+    .pricing_column{
+        max-width: 290px;
+    }
+    .circle_margin{
+        left: 190px;
+    }
+    .title_section h2{
+        font-size: 30px;
+        align-items: center;   
+        text-align: center;
+
+    }
+    .title_section{
+        align-items: center;
+        text-align: center;
+    }
+    
+}

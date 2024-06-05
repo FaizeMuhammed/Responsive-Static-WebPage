@@ -136,6 +136,13 @@ hr{
     align-items: center;
     justify-content: center;
 }
+.navbar_list label{
+    display: none;
+}
+
+#checking{
+    display: none;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -199,10 +206,13 @@ ul li  .drop_down li{
 ul li:hover .drop_down{
     display: block;
 }
+.in_btns{
+    display: none;
+}
 .nav_btn{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 /*hero_bar clases*/
 .hero_textbar{
@@ -215,7 +225,7 @@ ul li:hover .drop_down{
     color: var(--secondry-color);
 }
 .hero_imgbar img{
-    padding: 0px 0px 0px 88px;
+    padding: 0px ;
     max-width: 100%;
 }
 
@@ -233,8 +243,8 @@ ul li:hover .drop_down{
 /*appointment_section clases*/
 .appointment_row{
     display: flex;
-    justify-content: flex-start;
-    gap: 15px;
+    justify-content:  space-around;
+    
     position: relative;
     bottom: 46px;
 }
@@ -329,18 +339,21 @@ ul li:hover .drop_down{
 }
 .section_row{
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    /* gap: 10px; */
     align-items: baseline;
 }
 .section_column{
-    max-width: 348px;
+    max-width: 337px;
     background-color: #fff;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.section_column img{
+    max-width: 337px;
 }
 .sales_button .transperent_btn{
     border-radius: 40px;
@@ -753,7 +766,7 @@ ul li:hover .drop_down{
     align-items: center;
     justify-content: end;
     gap: 15px;
-    width: 100%;
+    
 }
 .footer_tale{
     display: flex;
