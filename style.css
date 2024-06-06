@@ -170,6 +170,7 @@ li a:hover{
     width: 80%;
     justify-content: space-between;
 }
+
 ul{
     margin: 0;
     padding: 0;
@@ -190,21 +191,46 @@ ul li{
 }
 ul li  .drop_down li{
     display: block;
+    align-items: center;
+    
+}
+.drop_down li a{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    width: 100px;
 }
 .drop_down{
-    width: 100%;
+    width: 129px;
     position: absolute;
-    display: none;
+    visibility: hidden;
     background-color: #fff;
     box-shadow: 0px 13px 19px 0px #00000012;
-    transition: ease-in;
+    
+}
+.drop_list ul{
+    transition:all 0.5s ease-in-out;
 }
 .drop_down a{
     display: block;
     padding: 5px;
 }
 ul li:hover .drop_down{
-    display: block;
+    visibility:visible ;
+    
+}
+.sub_dropdown{
+    top: 2px;
+    left: 130px;
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    background-color: #fff;
+    box-shadow: 0px 13px 19px 0px #00000012;
+    transition:all 0.5s ease-in-out;
+}
+li ul li:hover .sub_dropdown{
+    visibility: visible;
 }
 .in_btns{
     display: none;
@@ -773,6 +799,7 @@ ul li:hover .drop_down{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin: 10px 0px;
     
 }
 

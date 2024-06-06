@@ -8,6 +8,12 @@
         padding: 0 0 0 15px;
 
     }
+    .sub_dropdown{
+        left: 130px;
+    }
+    .drop_down{
+        visibility: none;
+    }
     .hero_bar{
         justify-content: space-between;
     }
@@ -136,6 +142,10 @@
     .circle_margin{
         bottom: 695px;
     }
+    .drop_down{
+        display: none;
+    }
+   
     
     .navbar li{
         padding: 0px;
