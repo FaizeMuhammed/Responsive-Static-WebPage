@@ -202,26 +202,28 @@ ul li  .drop_down li{
 }
 .drop_down{
     width: 129px;
+    transition: 0.2s ease-out;
     position: absolute;
+    top: 20px;
     visibility: hidden;
     background-color: #fff;
     box-shadow: 0px 13px 19px 0px #00000012;
     
 }
-.drop_list ul{
-    transition:all 0.5s ease-in-out;
-}
+
 .drop_down a{
     display: block;
     padding: 5px;
 }
 ul li:hover .drop_down{
-    visibility:visible ;
+    visibility:visible;
+    top: 35px;
+    
     
 }
 .sub_dropdown{
     top: 2px;
-    left: 130px;
+    left: 110px;
     width: 100%;
     position: absolute;
     visibility: hidden;
@@ -231,6 +233,7 @@ ul li:hover .drop_down{
 }
 li ul li:hover .sub_dropdown{
     visibility: visible;
+    left: 130px;
 }
 .in_btns{
     display: none;
@@ -759,7 +762,6 @@ li ul li:hover .sub_dropdown{
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 18px;
     padding: 0;
     justify-content: space-between;
 }
@@ -799,7 +801,8 @@ li ul li:hover .sub_dropdown{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin: 10px 0px;
+    margin: 10px 0px 0px 0px ;
+    padding: 20px 0px 15px 0px;
     
 }
 
