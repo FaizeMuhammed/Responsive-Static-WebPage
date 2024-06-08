@@ -1,3 +1,10 @@
+:root{
+    --primary-color: #737373;
+    --secondry-color: #23A6F0;
+    --primarytext-color: #252B42;
+    --background-color:#ffff;
+    --drop-color: #89b2c4;
+}
 @media only screen and (max-width: 1024px) {
    
     .container{
@@ -87,16 +94,27 @@
         padding: 0px;
 
     }
+    .container_lg{
+        width: 100%;
+        padding: 0px;
+
+    }
     .navbar_list{
         width: 70%;
         display: contents;
     }
     .navbar_list label{
         display: block;
+        padding: 0px 20px;
     }
     .navbar{
         display: flex;
         align-items: center;
+        padding: 13px;
+        position: fixed;
+        background-color: #ecf4ff;
+        width: 100%;
+        z-index: 1;
     }
     .drop_list{
         position: absolute;
@@ -105,14 +123,13 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 200px;
-        background-color: #89b2c4;
+        background-color: var(--drop-color);
         box-shadow: 0px 13px 20px 0px #00000012;
-        align-items: center;
+        align-items:center;
         justify-content: center;
         transition:all 0.2s ease-in-out;
         visibility: hidden;
-        
+        padding: 0px 0px 10px 0px;
         
     }
   
@@ -129,24 +146,72 @@
     }
     .in_btns{
         display: flex;
+
+    }
+    .in_btns a{
+        gap: 4px;
+    }
+    .in_btns a i{
+        font-size: 13px;
     }
     .nav_btn{
         display: none;
     }
     li ul{
-        visibility: hidden;
+        
     }
     .drop_list span{
-        display: none;
+        display: block;
     }
     .pricing_row{
         gap: 50px;
     }
     .circle_margin{
         bottom: 695px;
+        left: 195px;
     }
     .drop_down{
+        width: 129px;
+        transition:all  0.5s ease-in-out;
+        position: relative;
+        top: -17px;
         display: none;
+        background-color:var(--background-color);
+        border: none;
+        box-shadow: none;
+        
+        
+    }
+    li .drop_down li a{
+        font-size: 9px;
+        color:var(--primarytext-color);
+        
+    }
+    .drop_list li:hover .drop_down{
+        display: flex;
+        flex-direction: column;
+        top: -7px;
+        width: 100%;
+        background-color: var(--drop-color);
+        left: 68px;
+    }
+    .drop_list li{
+        display: ruby;
+    }
+    .sub_dropdown{
+        display: none;
+    }  
+    .drop_down span{
+        display: none;
+    } 
+    .in_btns span{
+        display: none;
+    }
+    .drop_list .bar_icon{
+        font-size: 15px;
+    }
+    li a:hover{
+        box-shadow: none;
     }
    
     
@@ -222,6 +287,7 @@
         width: 90px;
         height: 40px;
     }
+   
     .pricing_row{
         display: flex;
         flex-wrap: wrap;
@@ -281,7 +347,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: baseline;
     }
     .company_info ul{

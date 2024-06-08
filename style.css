@@ -20,6 +20,10 @@ header{
 .container{
     margin: auto;
     max-width: 1046px;
+}
+.container_lg{
+    margin: auto;
+    max-width: 1046px;
 } 
 .btn{
     display: inline-flex;
@@ -236,6 +240,9 @@ li ul li:hover .sub_dropdown{
     left: 130px;
 }
 .in_btns{
+    display: none;
+}
+li  .bar_icon{
     display: none;
 }
 .nav_btn{
