@@ -3,13 +3,17 @@
 
 <head>
     <title>Medical Naturo</title>
+    <link rel="icon" type="image/x-icon" href="assets/none.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" type="text/css" rel="stylesheet">
     <link href="responcive.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
@@ -28,7 +32,7 @@
         <div class="container_lg">
             <div class="navbar">
                 <div class="brand_name">
-                   
+
                     <h3>Medical Naturo</h3>
                 </div>
                 <div class="navbar_list">
@@ -36,52 +40,78 @@
                     <label for="checking">
                         <i class="fa-solid fa-bars"></i>
                     </label>
-                    
 
-                    <ul class="drop_list">
-                        <li><a href="#">Home<span class="bar_icon material-symbols-outlined">
-                            home
-                            </span></a></li>
-                        <li><a href="#">Products<span class="material-symbols-outlined">
-                                    arrow_drop_down
-                                </span></a>
-                            <ul class="drop_down">
-                                <li><a href="#">Product-1</a></li>
-                                <li><a href="#">Product-2<span class="material-symbols-outlined">
-                                    arrow_drop_down
-                                </span></a>
-                                    <ul class="sub_dropdown">
-                                        <li><a href="#">product-7</a></li>
-                                        <li><a href="#">product-7</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Product-3</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Pricing<span class="bar_icon material-symbols-outlined">
-                            sell
-                            </span></a></li>
-                        <li><a href="#">Contact<span class="material-symbols-outlined">
-                                    arrow_drop_down
-                                </span></a>
-                            <ul class="drop_down">
-                                <li><a href="#">Email</a></li>
-                                <li><a href="#">Ph No</a></li>
+                    <div class="drop_list">
+                        <ul class="drop_menu">
+                            <li><a href="#"><span class="drp_icon material-symbols-outlined">
+                                home
+                                </span>Home</a></li>
 
-                            </ul>
-                        <li class="in_btns"><a href="##">Login<i class="fa-solid fa-right-to-bracket"></i></a></li> 
-                        <li class="in_btns"><button class="btn filled_btn">JOIN US<span class=" arrow material-symbols-outlined">
-                                arrow_forward
-                            </span></button></li>   
-                        </li>
-                    </ul>
+                            <li>
+                                <input type="checkbox" id="check">
+                                <label for="check">
+                                    <div class="checking_bar">
+
+                                        <a id="drop_ic" href="#"><span class="drp_icon material-symbols-outlined">
+                                            inventory_2
+                                            </span>Products</a>
+
+
+                                        <span class="material-symbols-outlined">
+                                            arrow_drop_down
+                                        </span>
+                                    </div>
+                                </label>
+
+                                <ul class="drop_down">
+                                    <li><a href="#">Product-1</a></li>
+                                    <li><a href="#">Product-2<span class="material-symbols-outlined">
+                                                arrow_drop_down
+                                            </span></a>
+                                        <ul class="sub_dropdown">
+                                            <li><a href="#">product-7</a></li>
+                                            <li><a href="#">product-7</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Product-3</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="#"><span class="drp_icon material-symbols-outlined">
+                                sell
+                                </span>Pricing</a></li>
+
+                            <li class="icn_lg"><a href="#"><span class="drp_icon  material-symbols-outlined">
+                                contact_support
+                                </span>Contact<span class="drop_arrow material-symbols-outlined">
+                                        arrow_drop_down
+                                    </span></a>
+                                <ul class="drop_down">
+                                    <li><a href="#">Email</a></li>
+                                    <li><a href="#">Ph No</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="in_btns"><a href="##"><span class="drp_icon material-symbols-outlined">
+                                login
+                                </span>Login</a></li>
+
+                            <li class="in_btns"><button class="btn filled_btn">JOIN US<span
+                                        class=" arrow material-symbols-outlined">
+                                        arrow_forward
+                                    </span></button>
+                            </li>
+                        </ul>
+                    </div>
+
                     <div class="nav_btn">
                         <a href="##">Login</a>
                         <button class="btn filled_btn">JOIN US<span class="material-symbols-outlined">
                                 arrow_forward
                             </span></button>
                     </div>
-                    
+
                 </div>
 
             </div>

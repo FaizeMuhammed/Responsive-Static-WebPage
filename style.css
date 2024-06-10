@@ -8,8 +8,8 @@ body{
     margin: 0;
 }
 :root{
-    --primary-color: #737373;
-    --secondry-color: #23A6F0;
+    --secondry-color: #737373;
+    --primary-color: #23A6F0;
     --primarytext-color: #252B42;
     --background-color:#ffff;
 }
@@ -37,19 +37,19 @@ header{
 
 }
 .filled_btn{
-    background-color: var(--secondry-color);
-    border-color:var(--secondry-color) ;
+    background-color: var(--primary-color);
+    border-color:var(--primary-color) ;
     color: var(--background-color);
 }
 .transperent_btn{
     background-color: transparent;
-    border-color:var(--secondry-color) ;
-    color: var(--secondry-color);
+    border-color:var(--primary-color) ;
+    color: var(--primary-color);
 }
 .transperent_btn:hover{
   
-    background-color: var(--secondry-color);
-    border-color:var(--secondry-color) ;
+    background-color: var(--primary-color);
+    border-color:var(--primary-color) ;
     color:var(--background-color);
     cursor: pointer;
 }
@@ -78,7 +78,7 @@ h3{
     margin: 0;
 }
 h4{
-    color: var(--primary-color);
+    color: var(--secondry-color);
     margin: 0;
     font-weight: 500;
     font-size: 20px;
@@ -91,13 +91,13 @@ h5{
 }
 h6{
     margin: 0;
-    color: var(--secondry-color);
+    color: var(--primary-color);
     font-size: 14px;
     font-weight: 700;
 }
 p{
     margin: 0;
-    color: var(--primary-color);
+    color: var(--secondry-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -105,7 +105,7 @@ p{
 }
 a{
     text-decoration: none;
-    color: var(--primary-color);
+    color: var( --secondry-color);
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.2px;
@@ -140,12 +140,32 @@ hr{
     align-items: center;
     justify-content: center;
 }
-.navbar_list label{
+.navbar_list i{
+    display: none;
+}
+.drop_list input{
+    display: none;
+}
+.drop_list hr{
     display: none;
 }
 
 #checking{
     display: none;
+}
+.checking_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icn_lg a{
+    gap: 10px;
+}
+
+label{
+    padding: 0;
+    margin: 0;
 }
 .navbar{
     display: flex;
@@ -157,10 +177,10 @@ li a:hover{
     text-decoration: underline;
     box-shadow: 0px 13px 20px 0px #00000012;
     cursor: pointer;
-    color:var(--secondry-color);
+    color:var(--primary-color);
 }
 .nav_btn a{
-    color: var(--secondry-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
 .nav_btn a:hover{
@@ -198,6 +218,15 @@ ul li  .drop_down li{
     align-items: center;
     
 }
+.checking_bar a{
+    padding: 0px 0px 0px 10px;
+}
+.checking_bar span{
+    color: var(--secondry-color);
+}
+.drop_menu .drp_icon{
+    display: none;
+}
 .drop_down li a{
     text-align: center;
     align-items: center;
@@ -225,6 +254,8 @@ ul li:hover .drop_down{
     
     
 }
+
+
 .sub_dropdown{
     top: 2px;
     left: 110px;
@@ -258,7 +289,7 @@ li  .bar_icon{
     max-width: 599px;
 }
 .hero_textbar h5{
-    color: var(--secondry-color);
+    color: var(--primary-color);
 }
 .hero_imgbar img{
     padding: 0px ;
@@ -306,7 +337,7 @@ li  .bar_icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondry-color);
+    background-color: var(--primary-color);
 }
 .appointment_column:nth-child(2) .iconborder {
     background-color: #40BB15;
@@ -340,10 +371,10 @@ li  .bar_icon{
 .component_textbar a{
     display: flex;
     align-items: center;
-    color: var(--secondry-color);
+    color: var(--primary-color);
 }
 .component_textbar a:hover{
-    color: var(--primary-color);
+    color: var(--secondry-color);
 }
 .component_textbar hr{
     width: 94px;
@@ -496,7 +527,7 @@ li  .bar_icon{
 .rating_bar a{
     font-weight: 700;
     font-size: 14px;
-    color: var(--secondry-color);
+    color: var(--primary-color);
     margin: 0;
 }
 .rating_box span{
@@ -516,7 +547,7 @@ li  .bar_icon{
     color: #737373;
 }
 .sales span{
-    color: var(--primary-color);
+    color: var(--secondry-color);
 }
 .prices{
     display: flex;
@@ -530,7 +561,7 @@ li  .bar_icon{
     color: #bdbdbd;
 }
 .sale_btn a{
-    color: var(--secondry-color);
+    color: var(--primary-color);
 }
 /*pricing_section clases */
 .pricing_titlebar{
@@ -583,10 +614,10 @@ li  .bar_icon{
     box-shadow: 0px 13px 19px 0px #00000012;
 }  
 .price_tag h2{
-    color: var(--secondry-color);
+    color: var(--primary-color);
 }
 .pricing_para{
-    color: var(--primary-color);
+    color: var(--secondry-color);
 }
 .price_tag h6{
     color:#8ec2fc;
@@ -600,7 +631,7 @@ li  .bar_icon{
     position: relative;
 } 
 .circle_fav{
-        background-color:var(--secondry-color);   
+        background-color:var(--primary-color);   
         width: 89px;
         height: 90px; 
         border-radius: 50%;
@@ -789,11 +820,11 @@ li  .bar_icon{
 
 }
 .footer i{
-    color: var(--secondry-color);
+    color: var(--primary-color);
     font-size: 20px;
 }
 .footer h6{
-    color: var(--primary-color);
+    color: var(--secondry-color);
     width: 60%;
 }
 .socialmedia_icons{
