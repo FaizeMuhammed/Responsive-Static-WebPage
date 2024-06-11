@@ -159,9 +159,7 @@ hr{
     justify-content: center;
     
 }
-.icn_lg a{
-    gap: 10px;
-}
+
 
 label{
     padding: 0;
@@ -209,7 +207,7 @@ ul li{
 }
 .navbar_list ul li a{
     display: flex;
-    padding: 2px 15px;
+    padding: 2px 0px 2px 30px;
     text-align: center;
     align-items: center;
 }
