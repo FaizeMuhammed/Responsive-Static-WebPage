@@ -371,7 +371,10 @@
         gap: 50px;
         justify-content: center;
         align-items: baseline;
-    }    
+    } 
+    .navbar_list ul li a {
+        padding: 3px 0px 3px 8px;
+    }   
 
 
 }
