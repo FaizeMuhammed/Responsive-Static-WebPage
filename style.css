@@ -229,7 +229,7 @@ ul li  .drop_down li{
     text-align: center;
     align-items: center;
     display: flex;
-    width: 100px;
+    /* width: 100px; */
 }
 .drop_down{
     width: 129px;
@@ -251,6 +251,15 @@ ul li:hover .drop_down{
     top: 35px;
     
     
+}
+.checked_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.checked_bar  .ck_icn{
+    color: var(--secondry-color);
 }
 
 
