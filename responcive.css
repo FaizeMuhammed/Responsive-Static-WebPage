@@ -118,30 +118,41 @@
     }
     .drop_list{
         position: absolute;
-        left: 0%;
-        top: -385px;
+        left: 110%;
+        top: 63px;
         
         display: flex;
         flex-direction: column;
-        width: 100%;
-        background-color:  #ecf4ff;
+        width: 50%;
+        background-color: #ecf4ff;
         box-shadow: 0px 13px 20px 0px #00000012;
-        align-items:center;
+        align-items:flex-start;
         justify-content: center;
         transition:all 0.2s ease-in-out;
         visibility: hidden;
         padding: 0px 0px 10px 0px;
         
     }
+    .drop_menu hr{
+        text-align: center;
+        height: 1px;
+        width: 80%;
+        display: block;
+        background-color: var(--secondry-color);
+    }
     .drop_menu{
         display: flex;
         flex-direction: column;
-        background-color:  #ecf4ff;
+        background-color: #ecf4ff;
         justify-content: center;
-        /* position: absolute; */
-        gap: 5px;
+        width: 100%;
+        gap: 28px;
         align-items: flex-start;
         visibility: visible;
+        margin: 15px 0px 15px 0px;
+    }
+    .navbar{
+        padding: 20px 0px 20px 10px;
     }
     
   
@@ -150,7 +161,9 @@
     }
     #checking:checked ~  .drop_list{
         visibility: visible;
-        top: 40px;
+        top: 63px;
+        left: 60%;
+        border-radius: 8px;
        
     }
     #checking:checked ~ label i::before{
@@ -249,17 +262,12 @@
         top: 0px;
         width:100% ;
         background-color:  #ecf4ff;
-        left: 0px;
+        left: 40px;
         box-shadow: none;
         
     }
-    .drop_menu{
-        box-shadow: 0px 13px 19px 0px #00000012;
-
-    }
-    .drop_menu li{
-        box-shadow: 0px 13px 19px 0px #00000012;
-    }
+   
+   
     .icn_lg a{
         gap: 0px;
     }
@@ -283,7 +291,7 @@
        
     
     li .drop_down li a{
-        font-size: 11px;
+        font-size: 14px;
         color:var(--primarytext-color);
         
     }
@@ -310,15 +318,15 @@
         width: 100%;
     }
     .navbar li a{
-        font-size: 12px;
+        font-size: 17px;
         color: black;
-        gap: 5px;
+        gap: 7px;
         
     }
     li .btn{
         margin: 0px 0px 0px 10px;
-        padding: 10px;
-        font-size: 12px
+        padding: 15px;
+        font-size: 15px
     }
     .hero_bar{
         justify-content: center;
