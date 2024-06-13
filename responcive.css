@@ -123,7 +123,7 @@
         
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
         background-color: #ecf4ff;
         box-shadow: 0px 13px 20px 0px #00000012;
         align-items:flex-start;
@@ -147,7 +147,7 @@
         justify-content: center;
         width: 100%;
         gap: 28px;
-        align-items: flex-start;
+        align-items: center;
         visibility: visible;
         margin: 15px 0px 15px 0px;
     }
@@ -162,7 +162,7 @@
     #checking:checked ~  .drop_list{
         visibility: visible;
         top: 63px;
-        left: 60%;
+        left: 0;
         border-radius: 8px;
        
     }
@@ -229,7 +229,7 @@
     
     .checking_bar{
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         left: 30px;
     }
@@ -257,13 +257,14 @@
         display: none;
     }
     #check:checked~ .drop_down{
-        display:block ;
+        display:flex ;
         flex-direction: column;
         top: 0px;
         width:100% ;
         background-color:  #ecf4ff;
-        left: 40px;
+        left: 15px;
         box-shadow: none;
+        gap: 5px;
         
     }
    
@@ -291,7 +292,7 @@
        
     
     li .drop_down li a{
-        font-size: 14px;
+        font-size: 17px;
         color:var(--primarytext-color);
         
     }
@@ -315,17 +316,18 @@
     .navbar li{
         padding: 0px;
         margin: 0;
-        width: 100%;
+        
     }
     .navbar li a{
-        font-size: 17px;
+        font-size: 20px;
         color: black;
         gap: 7px;
+        font-weight: 500;
         
     }
     li .btn{
         margin: 0px 0px 0px 10px;
-        padding: 15px;
+        padding: 10px 60px;
         font-size: 15px
     }
     .hero_bar{
